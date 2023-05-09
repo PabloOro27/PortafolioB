@@ -9,12 +9,80 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
    <!-- estilos -->
    <link rel="stylesheet" href="../src/styles/index.css">
+   <!-- fuentes de letra -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;500&display=swap" rel="stylesheet">
+   <!-- titulo y favicon -->
    <title>Portafolio</title>
+   <link rel="shortcut icon" href="../src/assets/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
-   <h1>Mi titulo</h1>    
+   <!-- barra de navegacion -->
+   <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+               <img src="../src/assets/icons/icono principal.png" alt="">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Sobre Mi</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Proyectos</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Testimonios</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
 
+   <!-- seccion principal -->
+   <section class="hero">
+      <div class="hero-principal">
+         <img src="../src/assets/icons/usuario.png" alt="foto de perfl"> <!-- imagen de perfil -->
+         <h1>Hola, soy Pablo Orozco</h1>
+         <h2>Soy de Guatemala y estudio para ser desarrollador Front-End</h2>
+      </div>
+      <div class="hero-inferior">
+         <img class="imagen-inferior img-fluid" src="../src/assets/image/hero-inferior.svg" alt="">
+      </div>
+   </section>
 
+   <!-- about me -->
+   <section class="about-me seccion-oscura">
+      <div class="contenedor">
+         <h2 class="seccion-titulo">Conoce a Pablo Orozco</h2>
+         <p class="seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores at expedita eos dolorem officia, corporis incidunt fugit? Tempora, omnis atque nostrum molestiae dolorum accusantium deleniti quas! Nesciunt nulla suscipit repellendus!</p>
+      </div>
+   </section>
+
+   <!-- seccion experiencia -->
+   <section class="experiencia seccion-clara">
+      <div class="container text-center" >
+         <div class="row">
+            <!-- desarrolloweb -->
+            <div class="col-12 col-md-4">
+            </div>
+            <!-- Articulos -->
+            <div class="col-12 col-md-4">
+            </div>
+            <!-- Estudiante -->
+            <div class="col-12 col-md-4">
+            </div>
+         </div>
+      </div>
+   </section>
    <!-- script -->
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>

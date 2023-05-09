@@ -1,3 +1,98 @@
-h1{
-   color: red;
+/* variables de colores y letras  */
+:root{
+   --beige-white: #F6F1F1;
+   --celeste: #AFD3E2;
+   --blue-sky: #19A7CE;
+   --blue-navy: #146C94;
+}
+body{
+   font-family: 'Source Code Pro', monospace;
+}
+
+/* estilos generales */
+section{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.seccion-titulo{
+   font-size: 2rem;
+   padding: 15px 0;
+   font-weight: 350;
+}
+.seccion-texto{
+   font-size: 1.2rem;
+   font-weight: 200;
+}
+.seccion-oscura {
+   background-color: black;
+   color: white;
+}
+.seccion-clara{
+   background-color: var(--beige-white);
+   color: black;
+}
+/* barra de navegacion */
+.navbar-brand img{
+   width: 35px;
+}
+
+.navbar {
+   padding: 20px;
+   background-color: var(--celeste);
+   border-bottom: 2px solid black;
+}
+
+.navbar-collapse {
+   align-items: center;
+   justify-content: space-between;
+}
+
+/* hero */
+.hero {
+   align-items: stretch;
+   background-color: var(--beige-white);
+   min-height: 450px;
+   text-align: center;
+
+}
+.hero-principal h1{
+   font-size: 2.5rem;
+
+}
+.hero img{
+   width: 50px;
+}
+.hero-principal{
+   padding: 3rem;
+   font-weight: bold;
+}
+.hero-principal h2{
+   font-size: 1.5rem;
+}
+.hero-inferior img{
+   width: 500px;
+}
+
+/* sobre mi  */
+.about-me{
+   height: 500px;
+   padding: 2rem;
+   text-align: center;
+}
+.about-me .contenedor{
+   max-width: 600px;
+}
+
+/* experciencia */
+.experiencia{
+   padding: 2.5rem;
+
+}
+/* responsive */
+@media screen and (max-width: 768px) {
+   .navbar-brand {
+      display: none;
+   }  
 }
